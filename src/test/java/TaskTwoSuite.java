@@ -45,12 +45,7 @@ public class TaskTwoSuite {
     public void seatInteracting ()  throws InterruptedException{
 
         pull.seat().click();
-//        for (int i = 1 ; i<= 12 ; i++){
-//            if (pull.reserveSeat().getText().contains("availSeatClassS")){
-//                pull.reserveSeat().click();
-//            }else
-//                System.out.println("Seat is taken");
-//        }
+
         pull.seatNumber().click();
         Thread.sleep(10000);
     }
