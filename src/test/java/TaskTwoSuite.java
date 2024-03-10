@@ -16,11 +16,6 @@ public class TaskTwoSuite {
     WebDriver driver = new ChromeDriver();
     TaskTwoLocators pull = new TaskTwoLocators(driver);
 
-    public void customerDetails(String mobileNumber, String email){
-        pull.mobNumber().sendKeys(mobileNumber);
-        pull.email().sendKeys(email);
-    }
-
 
     @BeforeTest
     public void openBrowser(){
@@ -45,7 +40,6 @@ public class TaskTwoSuite {
     public void seatInteracting ()  throws InterruptedException{
 
         pull.seat().click();
-
         pull.seatNumber().click();
         Thread.sleep(10000);
     }

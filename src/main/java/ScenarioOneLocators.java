@@ -9,10 +9,6 @@ public class ScenarioOneLocators {
             this.driver = dr;
         }
 
-        public WebElement typeCarAccessories(){
-            return driver.findElement(By.xpath("//input[@id=\"nav-bb-search\"]"));
-        }
-
         public WebElement clickSearch(){
             return driver.findElement(By.cssSelector("input[id=\"nav-search-submit-button\"]"));
         }
